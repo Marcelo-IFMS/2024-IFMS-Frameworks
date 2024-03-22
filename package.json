@@ -4,6 +4,7 @@
   "description": "Disciplina de Frameworks turma 20241096205C",
   "main": "app.js",
   "scripts": {
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marcelo Tomporoski Perez",
