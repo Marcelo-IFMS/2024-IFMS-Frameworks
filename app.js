@@ -6,10 +6,15 @@ var rotaHome = require('./app/routes/home')(app);
 
 var rotaFormInclusaoNoticia = require('./app/routes/formulario_inclusao_noticias')(app);
 
-var rotaesportes =  require('./app/routes/esportes')(app);
+var rotaesportes = require('./app/routes/esportes')(app);
 
-var rota404 =  require('./app/routes/404')(app);
+var rotacursos = require('./app/routes/esportes')(app);
 
-app.listen(3000, function(){
+var rotapesquisa = require('./app/routes/esportes')(app);
+
+//deve ser a última rota
+var rota404 = require('./app/routes/404')(app);
+
+app.listen(3000, function () {
     console.log('Servidor ON');
 });
