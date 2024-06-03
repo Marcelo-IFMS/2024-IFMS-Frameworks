@@ -1,9 +1,16 @@
 var mysql = require('mysql');
-module.exports = function (){
+
+var connMySQL = function () {
+    console.log("Conexão com o banco de dados estabelecida");
     return mysql.createConnection({
         host: 'localhost',
         user: 'ifms',
         password: 'ifms2024!',
         database: 'portal_noticias'
     });
+
+}
+module.exports = function () {
+    console.log('O autoload carregou o módulo de conexão com o Banco de Dados');
+    return connMySQL;
 }
