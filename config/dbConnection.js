@@ -12,5 +12,5 @@ var connMySQL = function () {
 }
 module.exports = function () {
     console.log('O autoload carregou o módulo de conexão com o Banco de Dados');
-    return connMySQL;
+    return connMySQL
 }

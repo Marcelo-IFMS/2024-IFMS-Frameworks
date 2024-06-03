@@ -1,6 +1,6 @@
 var app = require('./config/server'); // configuração de rota do servidor
 
-// var rotaHome = require('./app/routes/home')(app);//rota para a página inicial
+//var rotaHome = require('./app/routes/home')(app);//rota para a página inicial
 
 // var rotaNoticias = require('./app/routes/noticias')(app); // rota para notícias
 
@@ -14,7 +14,9 @@ var app = require('./config/server'); // configuração de rota do servidor
 
 //deve ser a última rota
 //var rota404 = require('./app/routes/404')(app);
-
+app.use(function(req,res){
+    res.status(404).render('secao/404');
+});
 app.listen(3000, function () {
     console.log('Servidor ON');
 });

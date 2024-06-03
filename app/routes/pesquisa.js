@@ -1,5 +1,5 @@
 module.exports = function(app){
-    app.get('/esportes', function(req,res){
+    app.get('/pesquisa', function(req,res){
         res.render("secao/pesquisa");
     })
 }
